@@ -1,0 +1,23 @@
+{
+  "name": "javascript-testing-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test:dev": "npx mocha -w *.test.js",
+    "test": "npx mocha *.test.js",
+    "test:cov": "npx nyc npx mocha *.test.js"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "keywords": [],
+  "author": "Diego Almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3",
+    "nyc": "^15.1.0"
+  }
+}
